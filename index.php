@@ -193,10 +193,10 @@ $a = 50;
 $b = 25;
 $c = 25;
 $total = "SELECT count(id) FROM users;";
-$countA = $total * 50 / 100;
-$countB = $countC = $totsal * 25 / 100;
+$countA = $total * $a / 100;
+$countB = $total * $b / 100;
+$countC = $total * $c / 100;
 $usersA = "SELECT * FROM users LIMIT 0, $countA"; 
-
 $usersB = "SELECT * FROM users LIMIT $countA, $countB";
 $usersC = "SELECT * FROM users LIMIT " . ($countA + $countB) . ", $countC";
 
